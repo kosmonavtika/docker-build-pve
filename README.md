@@ -4,6 +4,8 @@
 
 Dockerfile and helper scripts to build most of the Proxmox VE packages and upload the built packages to S3. Some are downloaded from the Proxmox VE repository, however. It should be able to build the packages for both AMD64 and ARM64.
 
+Note that there are probably a number of issues at this point. Specifically with building the kernel on ARM64.
+
 ## S3 configuration
 
 Place your configuration in `s3/config` and your credentials in `s3/credentials`. 
