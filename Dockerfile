@@ -459,4 +459,4 @@ ADD ./s3/config /root/.aws/config
 ADD ./s3/credentials /root/.aws/credentials
 RUN mkdir -p /dist/ && \
   find /build/ -name '*.deb' -exec cp -prv '{}' '/dist/' ';' && \
-  aws s3 cp --recursive /dist/ s3://`uname -m | sed 's/x86_64/amd64/g'`-deb/ && \
+  aws s3 cp --recursive /dist/ s3://`uname -m | sed 's/x86_64/amd64/g'`-deb/
