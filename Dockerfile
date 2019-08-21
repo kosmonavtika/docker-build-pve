@@ -17,7 +17,7 @@ RUN \
     lintian \
     rsync
 
-# quasar-ve component packages
+# component packages
 RUN \
   apt-get install -y \
     corosync \
